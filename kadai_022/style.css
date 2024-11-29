@@ -1,0 +1,92 @@
+h1 {
+  /* 余白０ */
+  margin: 0px;
+}
+p {
+  /* 余白０、文字20px */
+  margin: 0px;
+  font-size: 20px;
+}
+body {
+  /* 余白０ */
+  margin: 0px; 
+}
+a {
+  /* 文字は20px */
+  font-size: 20px;
+}
+header {
+  /* 下の余白20px,背景色、中央揃え */
+  margin-bottom: 20px;
+  background-color: rgb(244,79,79);
+  text-align: center;
+}
+h1 {
+ /* 文字色 */
+  color: rgb(255,255,255)
+}
+main {
+  /* 余白10px */
+  margin: 10px;
+}
+#parent {
+  /* Flexコンテナ,左右均等に配置 */
+  display: flex;
+  justify-content: space-between;
+}
+.contents {
+  /* 線3px,実線,色 ,幅,
+  内余白上下10px左右15px、外余白上下20px、左右0、中中央揃え*/
+  border: solid 3px rgb(238,204,204);
+  flex-basis: 25%;
+  padding: 10px 15px;
+  margin: 20px opx;
+  text-align: center;
+}
+h2::before {
+    content: "●";
+    color: rgb(239,111,139);
+  /* 文字25px,下線3px,点線,色、●記号,色 */
+}
+h2 {
+  font-size: 25px;
+  border-bottom: dotted 3px rgb(236,122,122);
+}
+.contents p:nth-of-type(2)::first-letter {
+/* 2番目のp要素一番目の文字を太字、色 */
+  font-weight: bold;
+  color: rgb(97,206,249);
+}
+.contents img {
+  /* marginと幅 */
+  margin: 10px 0px;
+  width: 70%;
+}
+footer {
+  /* 背景色 */
+  background-color: rgb(244,79,79);
+  text-align: center;
+}
+a:link {
+  /* 文字色、訪問済みの文字色、マウスカーソルを乗せる文字色 */
+  color: rgb(255,255,255);
+}
+a:visited {
+  color: rgb(193,234,251);
+}
+a:hover {
+  color: rgb(245,178,168)
+}
+@media screen and (max-width: 768px) {
+  /* 768px以下でブレークポイントを設定
+  h230px、p25px、parent縦*/
+   h2 {
+      font-size: 30px;
+   }
+   p {
+      font-size: 25px;
+   }
+   #parent {
+    display: block;
+   }
+  }
