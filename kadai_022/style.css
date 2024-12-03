@@ -1,18 +1,9 @@
-h1 {
+h1, p, a, body {
   /* 余白０ */
   margin: 0px;
 }
-p {
-  /* 余白０、文字20px */
-  margin: 0px;
-  font-size: 20px;
-}
-body {
-  /* 余白０ */
-  margin: 0px; 
-}
-a {
-  /* 文字は20px */
+p, a {
+  /* 文字20px */
   font-size: 20px;
 }
 header {
@@ -32,7 +23,7 @@ main {
 #parent {
   /* Flexコンテナ,左右均等に配置 */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .contents {
   /* 線3px,実線,色 ,幅,
@@ -40,7 +31,7 @@ main {
   border: solid 3px rgb(238,204,204);
   flex-basis: 25%;
   padding: 10px 15px;
-  margin: 20px opx;
+  margin: 20px 0px;
   text-align: center;
 }
 h2::before {
